@@ -44,8 +44,8 @@ After Maple publishes a release, update `Formula/maple.rb`:
 4. Run:
 
 ```sh
-brew tap Makisuo/tap "$PWD"
+brew tap Makisuo/tap
 brew audit --formula maple
-brew install maple
+brew reinstall maple
 brew test maple
 ```
