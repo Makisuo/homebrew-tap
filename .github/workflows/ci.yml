@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - macos-14
+          - ubuntu-22.04
+          - ubuntu-24.04-arm
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Tap checkout
+        run: brew tap Makisuo/tap "$GITHUB_WORKSPACE"
+
+      - name: Audit formula
+        run: brew audit --formula maple
+
+      - name: Install formula
+        run: brew install maple
+
+      - name: Test formula
+        run: brew test maple
