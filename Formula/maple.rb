@@ -15,7 +15,8 @@ class Maple < Formula
     end
 
     on_intel do
-      odie "Maple does not publish an Intel macOS Homebrew bundle yet."
+      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.22/maple-v0.0.22-x86_64-apple-darwin.tar.gz"
+      sha256 "6164e7ae4dbcaecb7af3337d97f952a2959cdf82e9adef3a4f741fd7bb02cd04"
     end
   end
 

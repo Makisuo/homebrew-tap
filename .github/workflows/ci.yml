@@ -16,6 +16,11 @@ jobs:
       matrix:
         os:
           - macos-14
+          # Covers the on_intel path, which the formula only started serving at
+          # v0.0.22 — upstream published no Intel bundle until macos-15-intel
+          # replaced the retired macos-13 label. Scarce runners: this job can
+          # queue far longer than the others, and fail-fast is already off.
+          - macos-15-intel
           - ubuntu-22.04
           - ubuntu-24.04-arm
 
