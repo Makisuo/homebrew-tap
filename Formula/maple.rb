@@ -10,8 +10,8 @@ class Maple < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.19/maple-v0.0.19-aarch64-apple-darwin.tar.gz"
-      sha256 "823ad037adfabd39c939b4221466b28d857c68f4bf39f5b63f7331d9c9ca3439"
+      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.22/maple-v0.0.22-aarch64-apple-darwin.tar.gz"
+      sha256 "dd27e2210cbfbacab3d3bcdb0dec8a11a1b5520c4fc5a94e1e24242eaffb2799"
     end
 
     on_intel do
@@ -21,13 +21,13 @@ class Maple < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.19/maple-v0.0.19-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f1ccc30373e3551c0f6e1f72af7b25c5086a330dcc5cac7a147833f5285c405d"
+      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.22/maple-v0.0.22-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "32aa8a7bf27c32fa4b020b7c3cf8d080a61b2d4fea2c23f4d2b2d0b702c44d65"
     end
 
     on_intel do
-      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.19/maple-v0.0.19-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e56585ad90acfb606b7f72de7dd09521cb6495f88a3e378c9103cc7af3606c56"
+      url "https://github.com/MapleTechLabs/maple/releases/download/v0.0.22/maple-v0.0.22-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "44dae17e2fecf4e3da3cedb78cbfc09ded3c865952532a4644d6119c062ad7f0"
     end
   end
 
